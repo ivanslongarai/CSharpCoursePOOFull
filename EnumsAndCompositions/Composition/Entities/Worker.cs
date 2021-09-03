@@ -5,7 +5,7 @@ namespace Composition.Entities
 {
     public class Worker
     {
-        List<HourContract> _contracts;
+        private readonly List<HourContract> _contracts;
 
         public string Name { get; set; }
         public WorkerLevel Level { get; set; }

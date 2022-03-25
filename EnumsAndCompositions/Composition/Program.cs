@@ -9,7 +9,7 @@ namespace Composition
 {
     /*
      
-       Ler os dados de um trabalhador cokm N contratos (N fornecido pelo usuário).
+       Ler os dados de um trabalhador com N contratos (N fornecido pelo usuário).
        Depois, solicitar do usuário um mês e mostrar qual foi o salário do funcionário nesse mês, conforme exemplo
       
        Enter department's name: Design
@@ -69,7 +69,7 @@ namespace Composition
                 Console.Write("Duration (hours): ");
                 int numberOfHours = int.Parse(Console.ReadLine());
                 var contract = new HourContract(DateTime.Parse(data), valuePerHour, numberOfHours);
-                worker.AddContract(contract);  
+                worker.AddContract(contract);
             }
 
             Console.Write("Enter month and year to calculate income (MM/YYYY): ");

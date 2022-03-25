@@ -15,13 +15,13 @@ namespace ProjEnum
                 Status = OrderStatus.PendingPayment
             };
 
-            Console.WriteLine(order);
+            Console.WriteLine($"1 - {order}");
 
-            string txt = OrderStatus.PendingPayment.ToString();
-            Console.WriteLine(txt);
+            string enumToString = OrderStatus.PendingPayment.ToString();
+            Console.WriteLine($"2 - {enumToString}");
 
-            OrderStatus os = Enum.Parse<OrderStatus>("Delivered");
-            Console.WriteLine(os);
+            OrderStatus stringToEnum = Enum.Parse<OrderStatus>("Delivered");
+            Console.WriteLine($"3 - {stringToEnum}");
 
         }
     }
